@@ -63,32 +63,30 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function WhoWeArePanel() {
   return (
-    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid gap-4 md:grid-cols-[160px_1fr] md:gap-10">
+    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid gap-4 md:grid-cols-[150px_minmax(0,1fr)_260px] md:gap-9 lg:grid-cols-[160px_minmax(0,1fr)_292px] lg:gap-10">
       <div>
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
       </div>
-      <div>
-        <h2 className="max-w-[680px] font-heading text-[21px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
+      <div className="min-w-0">
+        <h2 className="max-w-[620px] font-heading text-[21px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
           {site.about.title}
         </h2>
-        <div className="mt-4 grid gap-5 lg:grid-cols-[1fr_260px]">
-          <div className="space-y-3 text-[13px] leading-6 text-brand-muted sm:text-[14px]">
-            {site.about.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-          <div className="border-y border-brand-rule py-3.5 sm:py-4">
-            <div className="grid grid-cols-2 gap-x-4 gap-y-3 lg:grid-cols-1">
-              {site.about.facts.map((fact) => (
-                <div key={fact.label}>
-                  <p className="font-heading text-[9px] font-medium uppercase tracking-[0.2em] text-brand-blue sm:text-[10px] sm:tracking-[0.26em]">
-                    {fact.label}
-                  </p>
-                  <p className="mt-1 text-[12px] leading-5 text-brand-ink sm:text-[13px]">{fact.value}</p>
-                </div>
-              ))}
+        <div className="mt-4 space-y-3 text-[13px] leading-6 text-brand-muted sm:text-[14px]">
+          {site.about.body.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+      <div className="border-y border-brand-rule py-3.5 sm:py-4 md:mt-0">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-3 md:grid-cols-1">
+          {site.about.facts.map((fact) => (
+            <div key={fact.label}>
+              <p className="font-heading text-[9px] font-medium uppercase tracking-[0.2em] text-brand-blue sm:text-[10px] sm:tracking-[0.26em]">
+                {fact.label}
+              </p>
+              <p className="mt-1 text-[12px] leading-5 text-brand-ink sm:text-[13px]">{fact.value}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
