@@ -41,7 +41,7 @@ export default function BrandTabs() {
   }
 
   return (
-    <section id="brand-tabs" className="flex min-h-[calc(100vh-120px)] items-center px-6 py-16 sm:py-20 lg:px-8">
+    <section id="brand-tabs" className="flex min-h-[calc(100vh-112px)] items-center px-6 py-6 sm:py-8 lg:px-8">
       <div className="mx-auto w-full max-w-[1120px]">
         <div>
           {activeTab === "who-we-are" && <WhoWeArePanel />}
@@ -55,7 +55,7 @@ export default function BrandTabs() {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="font-heading text-[12px] font-medium uppercase tracking-[0.32em] text-brand-blue sm:text-[13px]">
+    <p className="font-heading text-[10px] font-medium uppercase tracking-[0.3em] text-brand-blue sm:text-[11px]">
       {children}
     </p>
   );
@@ -63,28 +63,28 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function WhoWeArePanel() {
   return (
-    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid gap-10 md:grid-cols-[240px_1fr] md:gap-16">
+    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid gap-6 md:grid-cols-[160px_1fr] md:gap-10">
       <div>
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
       </div>
       <div>
-        <h2 className="font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
+        <h2 className="font-heading text-[22px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
           {site.about.title}
         </h2>
-        <div className="mt-7 grid gap-9 lg:grid-cols-[1fr_300px]">
-          <div className="space-y-5 text-[15px] leading-7 text-brand-muted sm:text-[16px]">
+        <div className="mt-4 grid gap-6 lg:grid-cols-[1fr_260px]">
+          <div className="space-y-3 text-[13px] leading-6 text-brand-muted sm:text-[14px]">
             {site.about.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
-          <div className="border-y border-brand-rule py-6">
-            <div className="grid gap-6">
+          <div className="border-y border-brand-rule py-4">
+            <div className="grid gap-3">
               {site.about.facts.map((fact) => (
                 <div key={fact.label}>
-                  <p className="font-heading text-[11px] font-medium uppercase tracking-[0.28em] text-brand-blue">
+                  <p className="font-heading text-[10px] font-medium uppercase tracking-[0.26em] text-brand-blue">
                     {fact.label}
                   </p>
-                  <p className="mt-2 text-[15px] leading-7 text-brand-ink">{fact.value}</p>
+                  <p className="mt-1 text-[13px] leading-5 text-brand-ink">{fact.value}</p>
                 </div>
               ))}
             </div>
@@ -98,17 +98,17 @@ function WhoWeArePanel() {
 function WhatWeDoPanel() {
   return (
     <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
-      <div className="max-w-[720px]">
+      <div className="max-w-[660px]">
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
-        <h2 className="mt-5 font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
+        <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
           {site.whatWeDo.title}
         </h2>
       </div>
-      <div className="mt-9 grid gap-x-10 gap-y-8 md:grid-cols-2">
+      <div className="mt-6 grid gap-x-8 gap-y-5 md:grid-cols-2">
         {site.whatWeDo.items.map((item) => (
-          <article key={item.title} className="flex min-h-[205px] flex-col border-t border-brand-rule pt-5">
-            <h3 className="font-heading text-[19px] font-medium leading-snug text-brand-ink">{item.title}</h3>
-            <p className="mt-4 text-[15px] leading-7 text-brand-muted">{item.text}</p>
+          <article key={item.title} className="flex min-h-[145px] flex-col border-t border-brand-rule pt-4">
+            <h3 className="font-heading text-[16px] font-medium leading-snug text-brand-ink">{item.title}</h3>
+            <p className="mt-2.5 text-[13px] leading-5 text-brand-muted">{item.text}</p>
             <StatusLine item={item} />
           </article>
         ))}
@@ -118,7 +118,7 @@ function WhatWeDoPanel() {
 }
 
 function StatusLine({ item }: { item: { status: string; href: string | null } }) {
-  const className = "mt-auto pt-6 font-heading text-[11px] font-medium uppercase tracking-[0.26em] text-brand-blue";
+  const className = "mt-auto pt-3 font-heading text-[10px] font-medium uppercase tracking-[0.22em] text-brand-blue";
 
   if (item.href) {
     return (
@@ -133,13 +133,13 @@ function StatusLine({ item }: { item: { status: string; href: string | null } })
 
 function EnquiryPanel() {
   return (
-    <div id="make-enquiry-panel" role="tabpanel" aria-labelledby="make-enquiry-tab" className="grid gap-12 md:grid-cols-[360px_1fr] md:gap-16">
+    <div id="make-enquiry-panel" role="tabpanel" aria-labelledby="make-enquiry-tab" className="grid gap-6 md:grid-cols-[280px_1fr] md:gap-10">
       <div>
         <SectionLabel>{site.contact.eyebrow}</SectionLabel>
-        <h2 className="mt-5 font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
+        <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
           {site.contact.title}
         </h2>
-        <p className="mt-5 text-[16px] leading-7 text-brand-muted">{site.contact.text}</p>
+        <p className="mt-3 text-[13px] leading-6 text-brand-muted">{site.contact.text}</p>
       </div>
       <ContactForm />
     </div>

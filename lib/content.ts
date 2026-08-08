@@ -32,29 +32,29 @@
   },
   whatWeDo: {
     eyebrow: "What We Do",
-    title: "Training, advisory and research for Australia Energy Market capability.",
+    title: "Australia Energy Market capability across four business lines.",
     items: [
       {
         title: "Energy Training",
-        text: "Ooh Energy is preparing training on Australia Energy Market fundamentals, dispatch, settlement and environmental certificate markets. The material is built from current market rules for corporate, graduate and university audiences that need structured market capability.",
+        text: "Ooh Energy is preparing training on Australia Energy Market fundamentals, dispatch, settlement and environmental certificate markets. The material is built from current market rules for corporate, graduate and university audiences.",
         status: "LAUNCHING SOON",
         href: null
       },
       {
         title: "Market Advisory",
-        text: "Ooh Energy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk. The advisory line is structured around market mechanisms, regulatory process and commercial exposure.",
+        text: "Ooh Energy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Data Centre & Large Load Energy",
-        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure over an asset's operating life.",
+        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Research & Information Products",
-        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination. The work is grounded in Australian market data and makes market rules, incentives and operational outcomes easier to interpret.",
+        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
         status: "LAUNCHING SOON",
         href: null
       }
@@ -65,8 +65,8 @@
     title: "An independent company for Australia Energy Market knowledge.",
     body: [
       "Ooh Energy works with businesses, professionals and institutions across the Australia Energy Market. The company is headquartered in Melbourne and works nationally with market participants, large energy users and organisations building internal market capability.",
-      "The company is independent. Ooh Energy does not sell electricity products, receive supplier commissions or operate as a broker, so its training, advisory and research work is structured around market rules, commercial exposure and decision quality.",
-      "The vision is to make Australia Energy Market operation easier to understand for the people making procurement, investment, operational and policy decisions. The practice is led by Dr. Xie, whose background spans practical hands-on experience in energy systems and wholesale market operation across Australian market operator, network and retail businesses."
+      "Ooh Energy does not sell electricity products, receive supplier commissions or operate as a broker. Its training, advisory and research work is structured around market rules, commercial exposure and decision quality.",
+      "The practice is led by Dr. Xie, whose background spans practical hands-on experience in energy systems and wholesale market operation across Australian market operator, network and retail businesses."
     ],
     facts: [
       { label: "Headquarters", value: "Melbourne, Victoria" },
@@ -77,8 +77,8 @@
   },
   contact: {
     eyebrow: "Make an enquiry",
-    title: "Make an enquiry",
-    text: "Use the form for training, advisory, research or large-load energy enquiries. Ooh Energy usually replies within two business days.",
+    title: "Start a conversation.",
+    text: "Use the form for training, advisory, research or large-load energy questions. Ooh Energy usually replies within two business days.",
     enquiryTypes: ["Parent brand", "Training", "Market advisory", "Data centre & large load", "Research", "Other"]
   },
   footer: {
