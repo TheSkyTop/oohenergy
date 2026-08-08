@@ -52,20 +52,20 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="grid gap-3.5" onSubmit={handleSubmit} noValidate={false}>
+    <form className="grid gap-3" onSubmit={handleSubmit} noValidate={false}>
       {/* Paste the Formspree or Web3Forms endpoint into NEXT_PUBLIC_FORMSPREE_ENDPOINT. */}
       <div className="hidden" aria-hidden="true">
         <label htmlFor="company-website">Company website</label>
         <input id="company-website" name="company_website" tabIndex={-1} autoComplete="off" />
       </div>
       <input type="hidden" name="recipient" value={site.enquiryEmail} />
-      <div className="grid gap-3.5 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 sm:gap-3.5">
         <Field label="Name" name="name" required />
         <Field label="Email" name="email" type="email" required />
       </div>
-      <div className="grid gap-3.5 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 sm:gap-3.5">
         <Field label="Organisation" name="organisation" />
-        <label className="grid gap-1.5 text-[14px] font-medium text-brand-ink">
+        <label className="grid gap-1.5 text-[13px] font-medium text-brand-ink sm:text-[14px]">
           Enquiry type
           <select
             name="enquiry_type"
@@ -78,7 +78,7 @@ export default function ContactForm() {
           </select>
         </label>
       </div>
-      <label className="grid gap-1.5 text-[14px] font-medium text-brand-ink">
+      <label className="grid gap-1.5 text-[13px] font-medium text-brand-ink sm:text-[14px]">
         Message
         <textarea
           name="message"
@@ -87,7 +87,7 @@ export default function ContactForm() {
           className="resize-y border border-brand-rule bg-brand-bg px-3 py-2 text-[13px] font-normal leading-5 text-brand-ink transition-colors duration-200 focus:border-brand-blue"
         />
       </label>
-      <label className="flex gap-3 text-[12px] leading-5 text-brand-muted">
+      <label className="flex gap-2.5 text-[12px] leading-5 text-brand-muted sm:gap-3">
         <input
           name="privacy_consent"
           type="checkbox"
@@ -99,7 +99,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={submitState === "submitting"}
-        className="h-9 w-fit border border-brand-blue px-5 text-[13px] font-medium text-brand-blue transition-colors duration-200 hover:bg-brand-blue hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+        className="h-10 w-full border border-brand-blue px-5 text-[13px] font-medium text-brand-blue transition-colors duration-200 hover:bg-brand-blue hover:text-white disabled:cursor-not-allowed disabled:opacity-60 sm:h-9 sm:w-fit"
       >
         {submitState === "submitting" ? "Sending..." : "Send enquiry"}
       </button>
@@ -135,7 +135,7 @@ function Field({
   required?: boolean;
 }) {
   return (
-    <label className="grid gap-1.5 text-[14px] font-medium text-brand-ink">
+    <label className="grid gap-1.5 text-[13px] font-medium text-brand-ink sm:text-[14px]">
       {label}
       <input
         name={name}

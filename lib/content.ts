@@ -62,7 +62,7 @@
   },
   about: {
     eyebrow: "Who We Are",
-    title: "An independent company for Australia Energy Market knowledge.",
+    title: "An independent energy information services company.",
     body: [
       "Ooh Energy works with businesses, professionals and institutions across the Australia Energy Market. The company is headquartered in Melbourne and works nationally with market participants, large energy users and organisations building internal market capability.",
       "Ooh Energy does not sell electricity products, receive supplier commissions or operate as a broker. Its training, advisory and research work is structured around market rules, commercial exposure and decision quality.",

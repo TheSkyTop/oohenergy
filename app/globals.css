@@ -46,6 +46,15 @@ button {
   animation: field-drift 14s linear infinite;
 }
 
+.mobile-energy-field {
+  background-image:
+    linear-gradient(rgba(22, 104, 227, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 104, 227, 0.1) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at 82% 52%, black 0%, transparent 72%);
+  animation: field-drift 18s linear infinite;
+}
+
 .flow-line {
   stroke: #1668e3;
   stroke-width: 2.4;
