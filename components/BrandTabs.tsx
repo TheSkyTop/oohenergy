@@ -55,7 +55,7 @@ export default function BrandTabs() {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="font-heading text-[10px] font-medium uppercase tracking-[0.24em] text-brand-blue sm:text-[11px] sm:tracking-[0.3em]">
+    <p className="font-heading text-[10px] font-medium uppercase leading-none tracking-[0.24em] text-brand-blue sm:text-[11px] sm:tracking-[0.3em]">
       {children}
     </p>
   );
@@ -63,7 +63,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function WhoWeArePanel() {
   return (
-    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid gap-4 md:grid-cols-[150px_minmax(0,1fr)_260px] md:gap-9 lg:grid-cols-[160px_minmax(0,1fr)_292px] lg:gap-10">
+    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid items-start gap-4 md:grid-cols-[150px_minmax(0,1fr)_260px] md:gap-9 lg:grid-cols-[160px_minmax(0,1fr)_292px] lg:gap-10">
       <div>
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
       </div>
