@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-heading: Outfit;
+  --font-body: Inter;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f5;
+  color: #5a6472;
+  font-family: var(--font-body), Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(22, 104, 227, 0.16);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid #1668e3;
+  outline-offset: 4px;
+}
+
+.energy-field {
+  background-image:
+    linear-gradient(rgba(22, 104, 227, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 104, 227, 0.16) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 55% 48%, black 0%, transparent 76%);
+  animation: field-drift 14s linear infinite;
+}
+
+.flow-line {
+  stroke: #1668e3;
+  stroke-width: 2.4;
+  stroke-linecap: square;
+  stroke-dasharray: 12 16;
+  opacity: 0.46;
+  animation: flow-offset 7s linear infinite;
+}
+
+.flow-line-b {
+  animation-duration: 9s;
+  opacity: 0.34;
+}
+
+.flow-line-c {
+  animation-duration: 11s;
+  opacity: 0.26;
+}
+
+.signal-ring {
+  stroke: #1668e3;
+  stroke-width: 2.4;
+  opacity: 0.24;
+  animation: signal-pulse 5s ease-in-out infinite;
+}
+
+.signal-ring-b {
+  animation-delay: 1.3s;
+}
+
+.signal-dot {
+  fill: #1668e3;
+  animation: dot-glow 3.8s ease-in-out infinite;
+}
+
+.signal-dot-b {
+  animation-delay: 0.9s;
+}
+
+.signal-dot-c {
+  animation-delay: 1.6s;
+}
+
+@keyframes field-drift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+
+  to {
+    background-position: 42px 42px, 42px 42px;
+  }
+}
+
+@keyframes flow-offset {
+  to {
+    stroke-dashoffset: -96;
+  }
+}
+
+@keyframes signal-pulse {
+  0%,
+  100% {
+    transform: scale(0.98);
+    transform-origin: center;
+    opacity: 0.12;
+  }
+
+  50% {
+    transform: scale(1.04);
+    transform-origin: center;
+    opacity: 0.28;
+  }
+}
+
+@keyframes dot-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+body:has(#who-we-are-panel) .home-view,
+body:has(#what-we-do-panel) .home-view,
+body:has(#make-enquiry-panel) .home-view {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
