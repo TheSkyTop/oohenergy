@@ -41,7 +41,7 @@ export default function BrandTabs() {
   }
 
   return (
-    <section id="brand-tabs" className="flex min-h-[calc(100vh-150px)] items-center px-6 py-24 sm:py-28 lg:px-8">
+    <section id="brand-tabs" className="flex min-h-[calc(100vh-120px)] items-center px-6 py-16 sm:py-20 lg:px-8">
       <div className="mx-auto w-full max-w-[1120px]">
         <div>
           {activeTab === "who-we-are" && <WhoWeArePanel />}
@@ -68,11 +68,11 @@ function WhoWeArePanel() {
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
       </div>
       <div>
-        <h2 className="font-heading text-[32px] font-medium leading-[1.18] text-brand-ink sm:text-[40px]">
+        <h2 className="font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
           {site.about.title}
         </h2>
-        <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_300px]">
-          <div className="space-y-6 text-[16px] leading-8 text-brand-muted sm:text-[17px]">
+        <div className="mt-7 grid gap-9 lg:grid-cols-[1fr_300px]">
+          <div className="space-y-5 text-[15px] leading-7 text-brand-muted sm:text-[16px]">
             {site.about.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
@@ -98,17 +98,17 @@ function WhoWeArePanel() {
 function WhatWeDoPanel() {
   return (
     <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
-      <div className="max-w-[800px]">
+      <div className="max-w-[720px]">
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
-        <h2 className="mt-8 font-heading text-[32px] font-medium leading-[1.18] text-brand-ink sm:text-[40px]">
+        <h2 className="mt-5 font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
           {site.whatWeDo.title}
         </h2>
       </div>
-      <div className="mt-14 grid gap-x-12 gap-y-12 md:grid-cols-2">
+      <div className="mt-9 grid gap-x-10 gap-y-8 md:grid-cols-2">
         {site.whatWeDo.items.map((item) => (
-          <article key={item.title} className="flex min-h-[250px] flex-col border-t border-brand-rule pt-6">
-            <h3 className="font-heading text-[21px] font-medium leading-snug text-brand-ink">{item.title}</h3>
-            <p className="mt-5 text-[16px] leading-8 text-brand-muted">{item.text}</p>
+          <article key={item.title} className="flex min-h-[205px] flex-col border-t border-brand-rule pt-5">
+            <h3 className="font-heading text-[19px] font-medium leading-snug text-brand-ink">{item.title}</h3>
+            <p className="mt-4 text-[15px] leading-7 text-brand-muted">{item.text}</p>
             <StatusLine item={item} />
           </article>
         ))}
@@ -118,7 +118,7 @@ function WhatWeDoPanel() {
 }
 
 function StatusLine({ item }: { item: { status: string; href: string | null } }) {
-  const className = "mt-auto pt-8 font-heading text-[12px] font-medium uppercase tracking-[0.28em] text-brand-blue";
+  const className = "mt-auto pt-6 font-heading text-[11px] font-medium uppercase tracking-[0.26em] text-brand-blue";
 
   if (item.href) {
     return (
@@ -136,10 +136,10 @@ function EnquiryPanel() {
     <div id="make-enquiry-panel" role="tabpanel" aria-labelledby="make-enquiry-tab" className="grid gap-12 md:grid-cols-[360px_1fr] md:gap-16">
       <div>
         <SectionLabel>{site.contact.eyebrow}</SectionLabel>
-        <h2 className="mt-8 font-heading text-[32px] font-medium leading-[1.18] text-brand-ink sm:text-[40px]">
+        <h2 className="mt-5 font-heading text-[28px] font-medium leading-[1.22] text-brand-ink sm:text-[34px]">
           {site.contact.title}
         </h2>
-        <p className="mt-6 text-[17px] leading-8 text-brand-muted sm:text-[18px] sm:leading-9">{site.contact.text}</p>
+        <p className="mt-5 text-[16px] leading-7 text-brand-muted">{site.contact.text}</p>
       </div>
       <ContactForm />
     </div>

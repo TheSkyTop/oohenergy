@@ -36,25 +36,25 @@
     items: [
       {
         title: "Energy Training",
-        text: "Ooh Energy is preparing training on Australia Energy Market fundamentals, market operation, dispatch and settlement, and environmental certificate markets. The material is built from current market rules and is intended for corporate, graduate and university audiences that need structured market capability.",
+        text: "Ooh Energy is preparing training on Australia Energy Market fundamentals, dispatch, settlement and environmental certificate markets. The material is built from current market rules for corporate, graduate and university audiences that need structured market capability.",
         status: "LAUNCHING SOON",
         href: null
       },
       {
         title: "Market Advisory",
-        text: "Ooh Energy receives enquiries on wholesale market analysis, market design and rule-change assessment, environmental certificate strategy, and price and procurement risk. The advisory line is structured around Australia Energy Market mechanisms, regulatory process and commercial exposure.",
+        text: "Ooh Energy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk. The advisory line is structured around market mechanisms, regulatory process and commercial exposure.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Data Centre & Large Load Energy",
-        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity and constraint exposure, load profile, firm-capacity requirements, and wholesale market exposure over an asset's operating life. The work informs siting, staging and procurement decisions before major commitments are made.",
+        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure over an asset's operating life.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Research & Information Products",
-        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination in the Australia Energy Market. The work is grounded in Australian market data and is intended to make market rules, incentives and operational outcomes easier to interpret.",
+        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination. The work is grounded in Australian market data and makes market rules, incentives and operational outcomes easier to interpret.",
         status: "LAUNCHING SOON",
         href: null
       }
