@@ -113,12 +113,7 @@ export default function ContactForm() {
           </p>
         )}
       </div>
-      <p className="text-[12px] text-brand-muted">
-        Ooh Energy usually replies within two business days. Direct email:{" "}
-        <a href={`mailto:${site.enquiryEmail}`} className="text-brand-blue underline-offset-4 hover:underline">
-          {site.enquiryEmail}
-        </a>
-      </p>
+      <p className="text-[12px] text-brand-muted">Ooh Energy usually replies within two business days.</p>
     </form>
   );
 }
