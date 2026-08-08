@@ -26,7 +26,7 @@
   hero: {
     eyebrow: "AUSTRALIA ENERGY MARKET",
     title: "Training, advisory and research on the Australia Energy Market.",
-    text: "Ooh Energy is an independent energy market company based in Melbourne, working nationally across training, advisory and applied research.",
+    text: "Ooh Energy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
     cta: "Make an enquiry",
     summaryItems: ["Energy training", "Market advisory", "Practical solutions & applied research"]
   },

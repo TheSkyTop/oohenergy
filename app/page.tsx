@@ -31,6 +31,7 @@ function JsonLd() {
       "Energy training",
       "Market advisory",
       "Data centre and large load energy",
+      "Practical solutions",
       "Applied research",
       "Australia Energy Market training",
       "Australia Energy Market advisory"
@@ -92,7 +93,7 @@ function Hero() {
           >
             {site.hero.cta}
           </a>
-          <div className="mt-6 grid grid-cols-1 gap-2 border-t border-brand-rule pt-3 min-[420px]:grid-cols-3 sm:flex sm:flex-wrap sm:gap-x-5">
+          <div className="mt-6 grid grid-cols-1 gap-2 border-t border-brand-rule pt-3 sm:flex sm:flex-wrap sm:gap-x-5">
             {site.hero.summaryItems.map((item) => (
               <span key={item} className="font-heading text-[11px] font-medium uppercase tracking-[0.2em] text-brand-muted">
                 {item}
@@ -135,6 +136,12 @@ function HeroSignal() {
     <div className="relative hidden h-[330px] translate-x-4 lg:block" aria-hidden="true">
       <div className="energy-field absolute inset-0" />
       <svg className="absolute inset-0 h-full w-full" viewBox="0 0 540 510" fill="none">
+        <path
+          d="M124 271L146 244L178 233L217 241L246 228L283 232L312 211L359 222L390 248L426 254L445 286L428 321L389 339L350 334L316 354L279 348L248 364L209 348L179 351L151 329L123 324L103 300L124 271Z"
+          fill="#D7DDE5"
+          opacity="0.32"
+        />
+        <path d="M338 379L356 369L374 381L361 396L342 393L338 379Z" fill="#D7DDE5" opacity="0.28" />
         <path className="flow-line flow-line-a" d="M38 336C118 263 166 260 243 296C320 332 394 302 502 166" />
         <path className="flow-line flow-line-b" d="M50 206C130 157 189 172 259 212C335 259 408 238 491 117" />
         <path className="flow-line flow-line-c" d="M76 398C163 356 218 370 300 404C369 435 432 398 488 332" />
