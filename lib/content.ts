@@ -16,12 +16,12 @@
   nav: [
     { label: "Who We Are", href: "#who-we-are" },
     { label: "What We Do", href: "#what-we-do" },
-    { label: "Make an enquiry", href: "#make-enquiry" }
+    { label: "Make An Enquiry", href: "#make-enquiry" }
   ],
   tabs: [
     { id: "who-we-are", label: "Who We Are" },
     { id: "what-we-do", label: "What We Do" },
-    { id: "make-enquiry", label: "Make an enquiry" }
+    { id: "make-enquiry", label: "Make An Enquiry" }
   ],
   hero: {
     eyebrow: "AUSTRALIA ENERGY MARKET",
