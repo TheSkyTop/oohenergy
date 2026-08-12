@@ -79,7 +79,7 @@
     eyebrow: "Make an enquiry",
     title: "Start a conversation.",
     text: "Use the form for training, advisory, research or large-load energy questions. Ooh Energy usually replies within two business days.",
-    enquiryTypes: ["Parent brand", "Training", "Market advisory", "Data centre & large load", "Research", "Other"]
+    enquiryTypes: ["Training", "Market advisory", "Data centre & large load", "Research", "Other"]
   },
   footer: {
     copyright: "All rights reserved.",
