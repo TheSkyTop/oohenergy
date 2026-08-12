@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.oohenergy.com"),
-  title: "Ooh Energy | Australia Energy Market company",
+  title: "Ooh Energy | Australia Energy Services Company",
   description:
-    "Training, advisory and applied research for people and businesses operating in the Australia Energy Market.",
+    "Independent energy information services, training, advisory, practical solutions and applied research for the Australia Energy Market.",
   openGraph: {
     title: "Ooh Energy",
     description:
-      "Training, advisory and applied research on the Australia Energy Market.",
+      "Independent energy information services, training, advisory, practical solutions and applied research for the Australia Energy Market.",
     url: "https://www.oohenergy.com",
     siteName: "Ooh Energy",
     type: "website",
