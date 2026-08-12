@@ -138,11 +138,11 @@ function HeroSignal() {
       <svg className="absolute inset-0 h-full w-full" viewBox="0 0 540 510" fill="none">
         <image
           href="/brand/australia-map-silhouette.png"
-          x="74"
-          y="108"
-          width="392"
-          height="275"
-          opacity="0.72"
+          x="52"
+          y="86"
+          width="436"
+          height="306"
+          opacity="0.88"
           preserveAspectRatio="xMidYMid meet"
         />
         <path className="flow-line flow-line-a" d="M38 336C118 263 166 260 243 296C320 332 394 302 502 166" />
