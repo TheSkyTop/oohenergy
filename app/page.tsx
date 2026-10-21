@@ -93,6 +93,12 @@ function Hero() {
           >
             {site.hero.cta}
           </a>
+          <div className="mt-5">
+            <a href={site.hero.academy.href} className="inline-flex min-h-11 items-center gap-2 text-[14px] font-medium text-brand-blue underline-offset-4 hover:underline">
+              {site.hero.academy.label}<span aria-hidden="true">&rarr;</span>
+            </a>
+            <p className="text-[11px] text-brand-muted">{site.hero.academy.status}</p>
+          </div>
           <div className="mt-6 grid grid-cols-1 gap-2 border-t border-brand-rule pt-3 sm:flex sm:flex-wrap sm:gap-x-5">
             {site.hero.summaryItems.map((item) => (
               <span key={item} className="font-heading text-[11px] font-medium uppercase tracking-[0.2em] text-brand-muted">

@@ -24,6 +24,11 @@
     { id: "make-enquiry", label: "Make An Enquiry" }
   ],
   hero: {
+    academy: {
+      label: "Explore Ooh Energy Academy",
+      status: "Training platform · Beta live",
+      href: "https://academy.oohenergy.com/"
+    },
     eyebrow: "AUSTRALIA ENERGY MARKET",
     title: "Training, advisory and research on the Australia Energy Market.",
     text: "Ooh Energy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
@@ -36,9 +41,9 @@
     items: [
       {
         title: "Energy Training",
-        text: "Ooh Energy is preparing training on Australia Energy Market fundamentals, dispatch, settlement and environmental certificate markets. The material is built from current market rules for corporate, graduate and university audiences.",
-        status: "LAUNCHING SOON",
-        href: null
+        text: "Ooh Energy Academy is the company's first product: an online energy training platform, now available in beta. The platform supports professionals and organisations building their understanding of the Australian energy market. Explore the test release through the Academy website.",
+        status: "EXPLORE ACADEMY · BETA LIVE",
+        href: "https://academy.oohenergy.com/"
       },
       {
         title: "Market Advisory",
