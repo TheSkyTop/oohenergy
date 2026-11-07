@@ -60,8 +60,8 @@
       {
         title: "Research & Information Products",
         text: "Ooh Energy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
-        status: "LAUNCHING SOON",
-        href: null
+        status: "EXPLORE AUSTRALIA ENERGY BRIEF · PUBLIC BETA",
+        href: "https://brief.oohenergy.com/"
       }
     ]
   },
