@@ -123,7 +123,9 @@ function WhatWeDoPanel() {
         {site.whatWeDo.items.map((item) => (
           <article key={item.title} className="flex min-h-0 flex-col border-t border-brand-rule pt-3.5 md:min-h-[145px] md:pt-4">
             <h3 className="font-heading text-[15px] font-medium leading-snug text-brand-ink sm:text-[16px]">{item.title}</h3>
-            <p className="mt-2 text-[12px] leading-5 text-brand-muted sm:text-[13px]">{item.text}</p>
+            {item.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="mt-2 text-[12px] leading-5 text-brand-muted sm:text-[13px]">{paragraph}</p>
+            ))}
             <StatusLine item={item} />
           </article>
         ))}
