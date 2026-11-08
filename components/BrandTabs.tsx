@@ -113,9 +113,9 @@ function AboutSignal() {
 function WhatWeDoPanel() {
   return (
     <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
-      <div className="max-w-[660px]">
+      <div>
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
-        <h2 className="mt-3 font-heading text-[20px] font-medium leading-[1.3] text-brand-ink sm:text-[22px]">
+        <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.3] text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">
           {site.whatWeDo.title}
         </h2>
       </div>

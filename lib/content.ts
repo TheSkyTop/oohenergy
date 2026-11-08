@@ -41,25 +41,25 @@
     items: [
       {
         title: "Energy Education & Training",
-        paragraphs: ["OohEnergy develops practical, industry-focused energy education and professional learning solutions.", "Australia Energy Academy, our first digital product, is now available in public beta. The platform provides structured learning pathways, interactive lessons, knowledge assessments and applied case studies covering Australian energy markets, electricity systems, regulation, energy technologies and commercial operations.", "Designed for professionals, students and organisations seeking to build practical energy sector capability."],
+        paragraphs: ["OohEnergy develops practical, industry-focused energy education for professionals, students and organisations.", "Australia Energy Academy, our first digital product, is in public beta. Structured pathways, interactive lessons, assessments and case studies cover Australian energy markets, electricity systems, regulation, technologies and commercial operations."],
         status: "EXPLORE ACADEMY \u00b7 BETA LIVE",
         href: "https://academy.oohenergy.com/"
       },
       {
         title: "Energy Intelligence & Research",
-        paragraphs: ["OohEnergy combines Australian energy market expertise, publicly available market data, applied research and emerging AI technologies to develop independent energy intelligence and digital information products.", "Australia Energy Brief, our second digital product, is being progressively introduced through public beta testing. It brings together energy market developments, market indicators, policy changes and industry research, with source-linked reporting and practical analysis of their significance.", "Our longer-term focus includes data analytics, intelligent monitoring and technology-enabled energy decision support."],
+        paragraphs: ["OohEnergy combines energy market expertise, public data and applied research to develop independent energy intelligence products, while exploring emerging AI technologies.", "Australia Energy Brief, our second digital product, is in public beta. It brings together market developments, indicators, policy and industry research with source-linked reporting and practical analysis. Our longer-term focus is analytics, monitoring and energy decision support."],
         status: "EXPLORE AUSTRALIA ENERGY BRIEF \u00b7 PUBLIC BETA",
         href: "https://brief.oohenergy.com/"
       },
       {
         title: "Data Centre & Large Load Energy",
-        paragraphs: ["OohEnergy supports data centre developers and large electricity users in navigating complex energy and infrastructure decisions from early-stage project development.", "Our capabilities cover grid connection pathways, network capacity and constraint assessment, load forecasting, firm-capacity requirements, electricity procurement, wholesale market exposure and long-term energy cost scenarios.", "We bring together practical energy industry experience, market knowledge and data-driven analysis to support project feasibility, commercial planning and informed investment decisions."],
+        paragraphs: ["OohEnergy supports data centre developers and large electricity users with energy and infrastructure decisions from early-stage development.", "Our capabilities span grid connections, network constraints, load forecasting, firm capacity, procurement, wholesale exposure and energy cost scenarios. Practical experience and data-driven analysis support feasibility, commercial planning and investment decisions."],
         status: "DISCUSS YOUR PROJECT",
         href: "#make-enquiry"
       },
       {
         title: "Energy Market Advisory",
-        paragraphs: ["OohEnergy provides independent energy market advisory services grounded in practical experience across Australian energy market operations, networks and electricity retail businesses.", "Our areas of expertise include wholesale electricity market analysis, price formation, market and regulatory developments, energy procurement strategies, environmental certificates, market exposure and commercial risk assessment.", "We help businesses and industry participants understand complex market conditions, evaluate strategic options and make better-informed energy decisions."],
+        paragraphs: ["OohEnergy provides independent advisory grounded in experience across Australian energy market operations, networks and electricity retail.", "Our expertise covers wholesale markets, price formation, regulation, procurement, environmental certificates and commercial risk. We help businesses understand market conditions, evaluate strategic options and make informed energy decisions."],
         status: "DISCUSS YOUR ENERGY NEEDS",
         href: "#make-enquiry"
       }
