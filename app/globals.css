@@ -182,7 +182,8 @@ body:has(#make-enquiry-panel) .home-view {
 }
 
 @media (min-width: 640px) {
-  #brand-tabs:has(#make-enquiry-panel) {
+  #brand-tabs:has(#make-enquiry-panel),
+  #brand-tabs:has(#who-we-are-panel) {
     display: flex;
     align-items: center;
     padding-top: 56px;
