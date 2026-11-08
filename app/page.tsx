@@ -74,7 +74,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="site-stage relative isolate overflow-hidden px-5 sm:px-6 lg:px-8">
+    <section className="site-stage home-stage relative isolate overflow-hidden px-5 sm:px-6 lg:px-8">
       <MobileEnergyField />
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px]">
         <div className="min-w-0">

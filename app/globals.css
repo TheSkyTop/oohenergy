@@ -168,3 +168,15 @@ body:has(#make-enquiry-panel) .home-view {
   .site-stage h1, .site-stage h2 { white-space: normal; overflow-wrap: anywhere; }
   input, select, textarea { font-size: 16px !important; }
 }
+
+/* Balance the landing composition within the available viewport. */
+@media (min-width: 640px) {
+  .home-view { display: flex; }
+  .home-stage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
