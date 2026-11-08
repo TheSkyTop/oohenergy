@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import ContactForm from "@/components/ContactForm";
 import { site } from "@/lib/content";
 
@@ -9,14 +9,8 @@ type TabId = (typeof site.tabs)[number]["id"];
 export default function BrandTabs() {
   const [activeTab, setActiveTab] = useState<TabId | null>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     function syncFromHash(isInitialLoad = false) {
-      if (isInitialLoad && window.location.hash) {
-        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
-        setActiveTab(null);
-        return;
-      }
-
       const hash = window.location.hash.replace("#", "");
       const matchingTab = site.tabs.find((tab) => tab.id === hash);
 
@@ -41,7 +35,7 @@ export default function BrandTabs() {
   }
 
   return (
-    <section id="brand-tabs" className="flex min-h-[calc(100svh-106px)] items-center px-5 py-5 sm:min-h-[calc(100vh-112px)] sm:px-6 sm:py-8 lg:px-8">
+    <section id="brand-tabs" className="site-stage flex-1 px-5 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-[1120px]">
         <div>
           {activeTab === "who-we-are" && <WhoWeArePanel />}
@@ -111,7 +105,7 @@ function AboutSignal() {
 
 function WhatWeDoPanel() {
   return (
-    <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab" className="md:translate-y-5">
+    <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
       <div>
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
         <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.3] text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">

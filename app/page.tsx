@@ -4,7 +4,7 @@ import { site } from "@/lib/content";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-brand-bg">
+    <main className="flex min-h-screen flex-col bg-brand-bg">
       <JsonLd />
       <Header />
       <HomeView />
@@ -48,7 +48,7 @@ function JsonLd() {
 
 function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-30 border-b border-brand-rule/90 bg-brand-bg/92 backdrop-blur-sm">
+    <header className="sticky inset-x-0 top-0 z-30 border-b border-brand-rule/90 bg-brand-bg/92 backdrop-blur-sm">
       <div className="mx-auto flex min-h-[76px] max-w-[1120px] flex-col items-start justify-center gap-2 px-5 py-2 sm:h-14 sm:min-h-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0 lg:px-8">
         <a href="/" className="flex items-center" aria-label="OohEnergy home">
           <Image
@@ -74,7 +74,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="relative isolate flex min-h-[calc(100svh-108px)] items-center overflow-hidden px-5 pb-5 pt-24 sm:min-h-[calc(100vh-104px)] sm:px-6 sm:pt-20 lg:px-8">
+    <section className="site-stage relative isolate overflow-hidden px-5 sm:px-6 lg:px-8">
       <MobileEnergyField />
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px]">
         <div className="min-w-0">
@@ -123,7 +123,7 @@ function Hero() {
 
 function HomeView() {
   return (
-    <div className="home-view">
+    <div className="home-view flex-1">
       <Hero />
     </div>
   );
