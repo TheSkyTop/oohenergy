@@ -104,7 +104,7 @@ function Hero() {
               <a href="https://brief.oohenergy.com/" className="inline-flex min-h-11 items-center gap-2 text-[14px] font-medium text-brand-blue underline-offset-4 hover:underline">
                 Explore Brief<span aria-hidden="true">&rarr;</span>
               </a>
-              <p className="text-[11px] text-brand-muted">Australia Energy Brief ¡¤ Public beta</p>
+              <p className="text-[11px] text-brand-muted">Australia Energy Brief &middot; Public beta</p>
             </div>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-2 border-t border-brand-rule pt-3 sm:flex sm:flex-wrap sm:gap-x-5">
