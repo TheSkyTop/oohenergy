@@ -83,13 +83,20 @@ function WhoWeArePanel() {
 function AboutSignal() {
   return (
     <figure className="about-signal mx-auto w-full max-w-[360px] self-center md:mx-0" aria-label="Illustration connecting Australian energy markets, intelligence and technology">
-      <div className="relative h-[220px] md:h-[300px]" aria-hidden="true">
-        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 360 360" fill="none">
-          <image href="/brand/australia-map-silhouette.png" x="24" y="82" width="312" height="220" opacity="0.65" preserveAspectRatio="xMidYMid meet" />
-          <path className="flow-line flow-line-a" style={{ animationDirection: "reverse" }} d="M322 262C268 260 253 218 210 208S130 196 72 130" />
-          <path className="flow-line flow-line-b" style={{ animationDirection: "reverse" }} d="M318 152C266 139 242 166 210 208S130 267 42 248" />
-          <circle className="signal-dot signal-dot-a" cx="72" cy="130" r="3.5" />
-          <circle className="signal-dot signal-dot-b" cx="322" cy="262" r="3.5" />
+      <div className="relative h-[260px] md:h-[300px]" aria-hidden="true">
+        <div className="energy-field absolute inset-0" style={{ animationDirection: "reverse" }} />
+        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 540 510" fill="none">
+          <image href="/brand/australia-map-silhouette.png" x="52" y="86" width="436" height="306" opacity="0.88" preserveAspectRatio="xMidYMid meet" />
+          <g transform="translate(540 0) scale(-1 1)">
+            <path className="flow-line flow-line-a" style={{ animationDirection: "reverse" }} d="M38 336C118 263 166 260 243 296C320 332 394 302 502 166" />
+            <path className="flow-line flow-line-b" style={{ animationDirection: "reverse" }} d="M50 206C130 157 189 172 259 212C335 259 408 238 491 117" />
+            <path className="flow-line flow-line-c" style={{ animationDirection: "reverse" }} d="M76 398C163 356 218 370 300 404C369 435 432 398 488 332" />
+            <circle className="signal-ring signal-ring-a" cx="155" cy="164" r="70" />
+            <circle className="signal-ring signal-ring-b" cx="400" cy="321" r="106" />
+            <circle className="signal-dot signal-dot-a" cx="155" cy="164" r="5.5" />
+            <circle className="signal-dot signal-dot-b" cx="400" cy="321" r="5.5" />
+            <circle className="signal-dot signal-dot-c" cx="259" cy="212" r="5" />
+          </g>
         </svg>
       </div>
       <figcaption className="border-y border-brand-rule py-3 text-center">
