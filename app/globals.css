@@ -180,3 +180,12 @@ body:has(#make-enquiry-panel) .home-view {
     padding-bottom: 40px;
   }
 }
+
+@media (min-width: 640px) {
+  #brand-tabs:has(#make-enquiry-panel) {
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
