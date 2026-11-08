@@ -77,19 +77,36 @@ function WhoWeArePanel() {
           ))}
         </div>
       </div>
-      <div className="border-y border-brand-rule py-3.5 sm:py-4 md:mt-0">
-        <div className="grid grid-cols-2 gap-x-4 gap-y-3 md:grid-cols-1">
-          {site.about.facts.map((fact) => (
-            <div key={fact.label}>
-              <p className="font-heading text-[9px] font-medium uppercase tracking-[0.2em] text-brand-blue sm:text-[10px] sm:tracking-[0.26em]">
-                {fact.label}
-              </p>
-              <p className="mt-1 text-[12px] leading-5 text-brand-ink sm:text-[13px]">{fact.value}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <AboutSignal />
     </div>
+  );
+}
+
+function AboutSignal() {
+  return (
+    <figure className="about-signal mx-auto w-full max-w-[360px] self-center md:mx-0" aria-label="Illustration connecting Australian energy markets, intelligence and technology">
+      <div className="relative h-[240px] md:h-[320px]" aria-hidden="true">
+        <div className="energy-field absolute inset-0 opacity-50" />
+        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 360 360" fill="none">
+          <image href="/brand/australia-map-silhouette.png" x="24" y="82" width="312" height="220" opacity="0.84" preserveAspectRatio="xMidYMid meet" />
+          <path d="M22 254C77 207 104 195 150 215S241 230 338 121" stroke="#1668e3" strokeWidth="1" opacity="0.15" />
+          <path className="flow-line flow-line-a" d="M22 254C77 207 104 195 150 215S241 230 338 121" />
+          <path className="flow-line flow-line-b" d="M38 151C101 124 131 159 181 177S264 175 319 233" />
+          <path className="flow-line flow-line-c" d="M56 294C115 267 155 274 200 291S279 288 328 262" />
+          <circle className="signal-ring signal-ring-a" cx="100" cy="178" r="35" />
+          <circle className="signal-ring signal-ring-b" cx="258" cy="242" r="48" />
+          <circle className="signal-dot signal-dot-a" cx="100" cy="178" r="3.5" />
+          <circle className="signal-dot signal-dot-b" cx="258" cy="242" r="3.5" />
+          <circle className="signal-dot signal-dot-c" cx="181" cy="177" r="3" />
+        </svg>
+      </div>
+      <figcaption className="border-y border-brand-rule py-3 text-center">
+        <div className="flex justify-between gap-2 font-heading text-[9px] font-medium uppercase tracking-[0.16em] text-brand-blue">
+          <span>Markets</span><span>Intelligence</span><span>Technology</span>
+        </div>
+        <p className="mt-2 text-[11px] leading-5 text-brand-muted">Melbourne · Working nationally</p>
+      </figcaption>
+    </figure>
   );
 }
 
