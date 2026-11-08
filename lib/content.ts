@@ -1,7 +1,7 @@
 ﻿export const site = {
-  name: "Ooh Energy",
+  name: "OohEnergy",
   domain: "www.oohenergy.com",
-  businessName: "Ooh Energy",
+  businessName: "OohEnergy",
   abn: "68 647 867 776",
   enquiryEmail: "yiting.xie@oohenergy.com",
   emailLabel: "Make an enquiry",
@@ -25,13 +25,13 @@
   ],
   hero: {
     academy: {
-      label: "Explore Ooh Energy Academy",
+      label: "Explore OohEnergy Academy",
       status: "Training platform · Beta live",
       href: "https://academy.oohenergy.com/"
     },
     eyebrow: "AUSTRALIA ENERGY MARKET",
     title: "Training, advisory and research on the Australia Energy Market.",
-    text: "Ooh Energy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
+    text: "OohEnergy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
     cta: "Make an enquiry",
     summaryItems: ["Energy training", "Market advisory", "Practical solutions & applied research"]
   },
@@ -41,25 +41,25 @@
     items: [
       {
         title: "Energy Training",
-        text: "Ooh Energy Academy is the company's first product: an online energy training platform, now available in beta. The platform supports professionals and organisations building their understanding of the Australian energy market. Explore the test release through the Academy website.",
+        text: "OohEnergy Academy is the company's first product: an online energy training platform, now available in beta. The platform supports professionals and organisations building their understanding of the Australian energy market. Explore the test release through the Academy website.",
         status: "EXPLORE ACADEMY · BETA LIVE",
         href: "https://academy.oohenergy.com/"
       },
       {
         title: "Market Advisory",
-        text: "Ooh Energy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
+        text: "OohEnergy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Data Centre & Large Load Energy",
-        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure.",
+        text: "OohEnergy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure.",
         status: "ENQUIRIES WELCOME",
         href: null
       },
       {
         title: "Research & Information Products",
-        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
+        text: "OohEnergy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
         status: "EXPLORE AUSTRALIA ENERGY BRIEF · PUBLIC BETA",
         href: "https://brief.oohenergy.com/"
       }
@@ -67,23 +67,25 @@
   },
   about: {
     eyebrow: "Who We Are",
-    title: "An independent energy information services company.",
+    title: "Independent energy expertise, intelligence and technology.",
     body: [
-      "Ooh Energy works with businesses, professionals and institutions across the Australia Energy Market. The company is headquartered in Melbourne and works nationally with market participants, large energy users and organisations building internal market capability.",
-      "Ooh Energy does not sell electricity products, receive supplier commissions or operate as a broker. Its training, advisory and research work is structured around market rules, commercial exposure and decision quality.",
-      "The practice is led by Dr. Xie, whose background spans practical hands-on experience in energy systems and wholesale market operation across Australian market operator, network and retail businesses."
+      "OohEnergy is an independent Australian energy services and technology company based in Melbourne, working nationally with businesses, industry professionals and institutions.",
+      "Our work spans energy market advisory, data centre and large-load energy solutions, professional education, and the development of digital energy intelligence products.",
+      "We combine practical industry experience, market knowledge and emerging technologies to support informed decisions across Australia's evolving energy sector.",
+      "OohEnergy operates independently and does not sell electricity products, receive energy supplier commissions or act as an electricity broker.",
+      "The company is led by Dr. Xie, whose experience spans Australian energy market operations, electricity networks and retail energy businesses, with a focus on bridging industry expertise, data analytics and technology."
     ],
     facts: [
       { label: "Headquarters", value: "Melbourne, Victoria" },
       { label: "Operating area", value: "Australia Energy Market, working nationally" },
       { label: "Company", value: "ABN 68 647 867 776" },
-      { label: "Position", value: "Independent training, advisory and applied research" }
+      { label: "Position", value: "Independent energy expertise, intelligence and technology" }
     ]
   },
   contact: {
     eyebrow: "Make an enquiry",
     title: "Start a conversation.",
-    text: "Use the form for training, advisory, research or large-load energy questions. Ooh Energy usually replies within two business days.",
+    text: "Use the form for training, advisory, research or large-load energy questions. OohEnergy usually replies within two business days.",
     enquiryTypes: ["Training", "Market advisory", "Data centre & large load", "Research", "Other"]
   },
   footer: {
