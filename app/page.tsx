@@ -76,12 +76,12 @@ function Hero() {
   return (
     <section className="relative isolate flex min-h-[calc(100svh-108px)] items-center overflow-hidden px-5 pb-5 pt-24 sm:min-h-[calc(100vh-104px)] sm:px-6 sm:pt-20 lg:px-8">
       <MobileEnergyField />
-      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 lg:grid-cols-[1fr_420px]">
-        <div className="max-w-[660px]">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
+        <div className="min-w-0">
           <p className="font-heading text-[11px] font-medium uppercase tracking-[0.28em] text-brand-blue sm:text-[13px] sm:tracking-[0.32em]">
             {site.hero.eyebrow}
           </p>
-          <h1 className="mt-4 max-w-[640px] font-heading text-[26px] font-medium leading-[1.18] tracking-normal text-brand-ink sm:text-[34px]">
+          <h1 className="mt-4 font-heading text-[22px] font-medium leading-[1.3] tracking-normal text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">
             {site.hero.title}
           </h1>
           <p className="mt-4 max-w-[600px] text-[14px] leading-6 text-brand-muted sm:text-[15px]">

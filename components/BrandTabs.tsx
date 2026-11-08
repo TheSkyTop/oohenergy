@@ -68,7 +68,7 @@ function WhoWeArePanel() {
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
       </div>
       <div className="min-w-0">
-        <h2 className="max-w-[620px] font-heading text-[21px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
+        <h2 className="max-w-[620px] font-heading text-[20px] font-medium leading-[1.3] text-brand-ink sm:text-[22px]">
           {site.about.title}
         </h2>
         <div className="mt-4 space-y-3 text-[13px] leading-6 text-brand-muted sm:text-[14px]">
@@ -115,7 +115,7 @@ function WhatWeDoPanel() {
     <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
       <div className="max-w-[660px]">
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
-        <h2 className="mt-3 font-heading text-[21px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
+        <h2 className="mt-3 font-heading text-[20px] font-medium leading-[1.3] text-brand-ink sm:text-[22px]">
           {site.whatWeDo.title}
         </h2>
       </div>
@@ -151,7 +151,7 @@ function EnquiryPanel() {
     <div id="make-enquiry-panel" role="tabpanel" aria-labelledby="make-enquiry-tab" className="grid gap-5 md:grid-cols-[280px_1fr] md:gap-10">
       <div>
         <SectionLabel>{site.contact.eyebrow}</SectionLabel>
-        <h2 className="mt-3 font-heading text-[21px] font-medium leading-[1.24] text-brand-ink sm:text-[28px]">
+        <h2 className="mt-3 font-heading text-[20px] font-medium leading-[1.3] text-brand-ink sm:text-[22px]">
           {site.contact.title}
         </h2>
         <p className="mt-2.5 text-[13px] leading-6 text-brand-muted">{site.contact.text}</p>
