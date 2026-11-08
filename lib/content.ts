@@ -46,10 +46,10 @@
         href: "https://academy.oohenergy.com/"
       },
       {
-        title: "Market Advisory",
-        text: "OohEnergy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
-        status: "ENQUIRIES WELCOME",
-        href: null
+        title: "Research & Information Products",
+        text: "OohEnergy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
+        status: "EXPLORE AUSTRALIA ENERGY BRIEF · PUBLIC BETA",
+        href: "https://brief.oohenergy.com/"
       },
       {
         title: "Data Centre & Large Load Energy",
@@ -58,10 +58,10 @@
         href: null
       },
       {
-        title: "Research & Information Products",
-        text: "OohEnergy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
-        status: "EXPLORE AUSTRALIA ENERGY BRIEF · PUBLIC BETA",
-        href: "https://brief.oohenergy.com/"
+        title: "Market Advisory",
+        text: "OohEnergy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
+        status: "ENQUIRIES WELCOME",
+        href: null
       }
     ]
   },
