@@ -57,7 +57,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function WhoWeArePanel() {
   return (
-    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_240px] lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
+    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_240px] lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
       <div className="min-w-0">
         <SectionLabel>{site.about.eyebrow}</SectionLabel>
         <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.3] text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">
