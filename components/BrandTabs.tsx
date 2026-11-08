@@ -63,12 +63,10 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function WhoWeArePanel() {
   return (
-    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid items-start gap-4 md:grid-cols-[150px_minmax(0,1fr)_260px] md:gap-9 lg:grid-cols-[160px_minmax(0,1fr)_292px] lg:gap-10">
-      <div>
-        <SectionLabel>{site.about.eyebrow}</SectionLabel>
-      </div>
+    <div id="who-we-are-panel" role="tabpanel" aria-labelledby="who-we-are-tab" className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_240px] lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
       <div className="min-w-0">
-        <h2 className="max-w-[620px] font-heading text-[20px] font-medium leading-[1.3] text-brand-ink sm:text-[22px]">
+        <SectionLabel>{site.about.eyebrow}</SectionLabel>
+        <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.3] text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">
           {site.about.title}
         </h2>
         <div className="mt-4 space-y-3 text-[13px] leading-6 text-brand-muted sm:text-[14px]">
@@ -85,26 +83,20 @@ function WhoWeArePanel() {
 function AboutSignal() {
   return (
     <figure className="about-signal mx-auto w-full max-w-[360px] self-center md:mx-0" aria-label="Illustration connecting Australian energy markets, intelligence and technology">
-      <div className="relative h-[240px] md:h-[320px]" aria-hidden="true">
-        <div className="energy-field absolute inset-0 opacity-50" />
+      <div className="relative h-[220px] md:h-[300px]" aria-hidden="true">
         <svg className="absolute inset-0 h-full w-full" viewBox="0 0 360 360" fill="none">
-          <image href="/brand/australia-map-silhouette.png" x="24" y="82" width="312" height="220" opacity="0.84" preserveAspectRatio="xMidYMid meet" />
-          <path d="M22 254C77 207 104 195 150 215S241 230 338 121" stroke="#1668e3" strokeWidth="1" opacity="0.15" />
-          <path className="flow-line flow-line-a" d="M22 254C77 207 104 195 150 215S241 230 338 121" />
-          <path className="flow-line flow-line-b" d="M38 151C101 124 131 159 181 177S264 175 319 233" />
-          <path className="flow-line flow-line-c" d="M56 294C115 267 155 274 200 291S279 288 328 262" />
-          <circle className="signal-ring signal-ring-a" cx="100" cy="178" r="35" />
-          <circle className="signal-ring signal-ring-b" cx="258" cy="242" r="48" />
-          <circle className="signal-dot signal-dot-a" cx="100" cy="178" r="3.5" />
-          <circle className="signal-dot signal-dot-b" cx="258" cy="242" r="3.5" />
-          <circle className="signal-dot signal-dot-c" cx="181" cy="177" r="3" />
+          <image href="/brand/australia-map-silhouette.png" x="24" y="82" width="312" height="220" opacity="0.65" preserveAspectRatio="xMidYMid meet" />
+          <path className="flow-line flow-line-a" style={{ animationDirection: "reverse" }} d="M322 262C268 260 253 218 210 208S130 196 72 130" />
+          <path className="flow-line flow-line-b" style={{ animationDirection: "reverse" }} d="M318 152C266 139 242 166 210 208S130 267 42 248" />
+          <circle className="signal-dot signal-dot-a" cx="72" cy="130" r="3.5" />
+          <circle className="signal-dot signal-dot-b" cx="322" cy="262" r="3.5" />
         </svg>
       </div>
       <figcaption className="border-y border-brand-rule py-3 text-center">
         <div className="flex justify-between gap-2 font-heading text-[9px] font-medium uppercase tracking-[0.16em] text-brand-blue">
           <span>Markets</span><span>Intelligence</span><span>Technology</span>
         </div>
-        <p className="mt-2 text-[11px] leading-5 text-brand-muted">Melbourne · Working nationally</p>
+        <p className="mt-2 text-[11px] leading-5 text-brand-muted">Melbourne &middot; Working nationally</p>
       </figcaption>
     </figure>
   );
@@ -112,7 +104,7 @@ function AboutSignal() {
 
 function WhatWeDoPanel() {
   return (
-    <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab">
+    <div id="what-we-do-panel" role="tabpanel" aria-labelledby="what-we-do-tab" className="md:translate-y-5">
       <div>
         <SectionLabel>{site.whatWeDo.eyebrow}</SectionLabel>
         <h2 className="mt-3 font-heading text-[22px] font-medium leading-[1.3] text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">

@@ -67,14 +67,8 @@
   },
   about: {
     eyebrow: "Who We Are",
-    title: "Independent energy expertise, intelligence and technology.",
-    body: [
-      "OohEnergy is an independent Australian energy services and technology company based in Melbourne, working nationally with businesses, industry professionals and institutions.",
-      "Our work spans energy market advisory, data centre and large-load energy solutions, professional education, and the development of digital energy intelligence products.",
-      "We combine practical industry experience, market knowledge and emerging technologies to support informed decisions across Australia's evolving energy sector.",
-      "OohEnergy operates independently and does not sell electricity products, receive energy supplier commissions or act as an electricity broker.",
-      "The company is led by Dr. Xie, whose experience spans Australian energy market operations, electricity networks and retail energy businesses, with a focus on bridging industry expertise, data analytics and technology."
-    ],
+    title: "Independent energy expertise, intelligence and technology",
+    body: ["OohEnergy is an independent Australian energy services and technology company based in Melbourne and working nationally.", "We support businesses, industry professionals and institutions through energy market advisory, data centre and large-load energy solutions, professional education, and digital energy intelligence products.", "Our work brings together practical industry experience, market knowledge and technology to support better decisions across Australia\u2019s evolving energy sector.", "OohEnergy operates independently and does not sell electricity products, receive supplier commissions or act as an electricity broker.", "The company is led by Dr. Xie, whose background spans Australian energy market operations, electricity networks and retail energy businesses, with a focus on connecting industry expertise, data analytics and technology."] ,
     facts: [
       { label: "Headquarters", value: "Melbourne, Victoria" },
       { label: "Operating area", value: "Australia Energy Market, working nationally" },
