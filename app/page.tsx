@@ -49,7 +49,7 @@ function JsonLd() {
 function Header() {
   return (
     <header className="sticky inset-x-0 top-0 z-30 border-b border-brand-rule/90 bg-brand-bg/92 backdrop-blur-sm">
-      <div className="mx-auto flex min-h-[76px] max-w-[1120px] flex-col items-start justify-center gap-2 px-5 py-2 sm:h-14 sm:min-h-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0 lg:px-8">
+      <div className="mx-auto flex min-h-[76px] max-w-[1184px] flex-col items-start justify-center gap-2 px-5 py-2 sm:h-14 sm:min-h-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0 lg:px-8">
         <a href="/" className="flex items-center" aria-label="OohEnergy home">
           <Image
             src={site.logo}
