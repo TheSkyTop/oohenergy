@@ -2,7 +2,7 @@
   "source": {
     "name": "AEMO Summer Operations",
     "url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/summer-operations",
-    "lastAttempt": "2026-11-22T06:12:29.730634+00:00",
+    "lastAttempt": "2026-11-22T06:14:38.031422+00:00",
     "lastSuccess": null,
     "error": "HTTP Error 403: Forbidden"
   },
@@ -13,7 +13,7 @@
       "url": "https://www.aemo.com.au/-/media/files/electricity/nem/system-operations/summer-operations/2026-27-AEMO-Summer-Outlook",
       "firstSeen": "2026-11-22T06:12:29.730634+00:00",
       "lastSuccess": null,
-      "lastAttempt": "2026-11-22T06:12:29.730634+00:00",
+      "lastAttempt": "2026-11-22T06:14:38.031422+00:00",
       "error": "HTTP Error 403: Forbidden"
     }
   ]
