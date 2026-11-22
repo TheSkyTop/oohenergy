@@ -2,8 +2,8 @@ import Link from "next/link";
 import { site } from "@/lib/content";
 
 export const metadata = {
-  title: "Terms & Disclaimer | Ooh Energy",
-  description: "Terms and disclaimer for Ooh Energy."
+  title: "Terms & Disclaimer | OohEnergy",
+  description: "Terms and disclaimer for OohEnergy."
 };
 
 export default function TermsPage() {

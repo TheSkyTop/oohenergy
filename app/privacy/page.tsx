@@ -2,8 +2,8 @@ import Link from "next/link";
 import { site } from "@/lib/content";
 
 export const metadata = {
-  title: "Privacy Policy | Ooh Energy",
-  description: "Privacy Policy for Ooh Energy enquiries."
+  title: "Privacy Policy | OohEnergy",
+  description: "Privacy Policy for OohEnergy enquiries."
 };
 
 export default function PrivacyPage() {

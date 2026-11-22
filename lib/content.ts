@@ -1,7 +1,7 @@
 ﻿export const site = {
-  name: "Ooh Energy",
+  name: "OohEnergy",
   domain: "www.oohenergy.com",
-  businessName: "Ooh Energy",
+  businessName: "OohEnergy",
   abn: "68 647 867 776",
   enquiryEmail: "yiting.xie@oohenergy.com",
   emailLabel: "Make an enquiry",
@@ -25,65 +25,61 @@
   ],
   hero: {
     academy: {
-      label: "Explore Ooh Energy Academy",
+      label: "Explore OohEnergy Academy",
       status: "Training platform · Beta live",
       href: "https://academy.oohenergy.com/"
     },
     eyebrow: "AUSTRALIA ENERGY MARKET",
     title: "Training, advisory and research on the Australia Energy Market.",
-    text: "Ooh Energy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
+    text: "OohEnergy is an independent energy information services company based in Melbourne, working nationally across training, advisory, practical solutions and applied research.",
     cta: "Make an enquiry",
     summaryItems: ["Energy training", "Market advisory", "Practical solutions & applied research"]
   },
   whatWeDo: {
     eyebrow: "What We Do",
-    title: "Australia Energy Market capability across four business lines.",
+    title: "Australian energy expertise, intelligence and technology for real-world decisions.",
     items: [
       {
-        title: "Energy Training",
-        text: "Ooh Energy Academy is the company's first product: an online energy training platform, now available in beta. The platform supports professionals and organisations building their understanding of the Australian energy market. Explore the test release through the Academy website.",
-        status: "EXPLORE ACADEMY · BETA LIVE",
+        title: "Energy Education & Training",
+        paragraphs: ["OohEnergy develops practical, industry-focused energy education for professionals, students and organisations.", "Australia Energy Academy, our first digital product, is in public beta. Structured pathways, interactive lessons, assessments and case studies cover Australian energy markets, electricity systems, regulation, technologies and commercial operations."],
+        status: "EXPLORE ACADEMY \u00b7 BETA LIVE",
         href: "https://academy.oohenergy.com/"
       },
       {
-        title: "Market Advisory",
-        text: "Ooh Energy receives enquiries on wholesale market analysis, rule-change assessment, environmental certificate strategy, and price and procurement risk across market, regulatory and commercial exposure.",
-        status: "ENQUIRIES WELCOME",
-        href: null
+        title: "Energy Intelligence & Research",
+        paragraphs: ["OohEnergy combines energy market expertise, public data and applied research to develop independent energy intelligence products, while exploring emerging AI technologies.", "Australia Energy Brief, our second digital product, is in public beta. It brings together market developments, indicators, policy and industry research with source-linked reporting and practical analysis. Our longer-term focus is analytics, monitoring and energy decision support."],
+        status: "EXPLORE AUSTRALIA ENERGY BRIEF \u00b7 PUBLIC BETA",
+        href: "https://brief.oohenergy.com/"
       },
       {
         title: "Data Centre & Large Load Energy",
-        text: "Ooh Energy receives early-stage enquiries on connection pathway, network capacity, constraint exposure, load profile, firm-capacity requirements and wholesale market exposure.",
-        status: "ENQUIRIES WELCOME",
-        href: null
+        paragraphs: ["OohEnergy supports data centre developers and large electricity users with energy and infrastructure decisions from early-stage development.", "Our capabilities span grid connections, network constraints, load forecasting, firm capacity, procurement, wholesale exposure and energy cost scenarios. Practical experience and data-driven analysis support feasibility, commercial planning and investment decisions."],
+        status: "DISCUSS YOUR PROJECT",
+        href: "#make-enquiry"
       },
       {
-        title: "Research & Information Products",
-        text: "Ooh Energy is developing applied research and information products on electricity market design and coordination, grounded in Australian market data and operational outcomes.",
-        status: "LAUNCHING SOON",
-        href: null
+        title: "Energy Market Advisory",
+        paragraphs: ["OohEnergy provides independent advisory grounded in experience across Australian energy market operations, networks and electricity retail.", "Our expertise covers wholesale markets, price formation, regulation, procurement, environmental certificates and commercial risk. We help businesses understand market conditions, evaluate strategic options and make informed energy decisions."],
+        status: "DISCUSS YOUR ENERGY NEEDS",
+        href: "#make-enquiry"
       }
     ]
   },
   about: {
     eyebrow: "Who We Are",
-    title: "An independent energy information services company.",
-    body: [
-      "Ooh Energy works with businesses, professionals and institutions across the Australia Energy Market. The company is headquartered in Melbourne and works nationally with market participants, large energy users and organisations building internal market capability.",
-      "Ooh Energy does not sell electricity products, receive supplier commissions or operate as a broker. Its training, advisory and research work is structured around market rules, commercial exposure and decision quality.",
-      "The practice is led by Dr. Xie, whose background spans practical hands-on experience in energy systems and wholesale market operation across Australian market operator, network and retail businesses."
-    ],
+    title: "Independent energy expertise, intelligence and technology",
+    body: ["OohEnergy is an independent Australian energy services and technology company based in Melbourne and working nationally.", "We support businesses, industry professionals and institutions through energy market advisory, data centre and large-load energy solutions, professional education, and digital energy intelligence products.", "Our work brings together practical industry experience, market knowledge and technology to support better decisions across Australia\u2019s evolving energy sector.", "OohEnergy operates independently and does not sell electricity products, receive supplier commissions or act as an electricity broker.", "The company is led by Dr. Xie, whose background spans Australian energy market operations, electricity networks and retail energy businesses, with a focus on connecting industry expertise, data analytics and technology."] ,
     facts: [
       { label: "Headquarters", value: "Melbourne, Victoria" },
       { label: "Operating area", value: "Australia Energy Market, working nationally" },
       { label: "Company", value: "ABN 68 647 867 776" },
-      { label: "Position", value: "Independent training, advisory and applied research" }
+      { label: "Position", value: "Independent energy expertise, intelligence and technology" }
     ]
   },
   contact: {
     eyebrow: "Make an enquiry",
     title: "Start a conversation.",
-    text: "Use the form for training, advisory, research or large-load energy questions. Ooh Energy usually replies within two business days.",
+    text: "Use the form for training, advisory, research or large-load energy questions. OohEnergy usually replies within two business days.",
     enquiryTypes: ["Training", "Market advisory", "Data centre & large load", "Research", "Other"]
   },
   footer: {

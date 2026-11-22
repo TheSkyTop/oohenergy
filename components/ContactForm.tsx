@@ -26,7 +26,7 @@ export default function ContactForm() {
     }
 
     try {
-      formData.set("_subject", "Ooh Energy website enquiry");
+      formData.set("_subject", "OohEnergy website enquiry");
       formData.set("_template", "table");
       formData.set("_captcha", "false");
 
@@ -39,7 +39,7 @@ export default function ContactForm() {
       });
       const result = await response.json().catch(() => null);
 
-      if (!response.ok || result?.success === "false" || result?.success === false) {
+      if (!response.ok || !(result?.success === true || result?.success === "true" || result?.ok === true)) {
         throw new Error("Form submission failed");
       }
 
@@ -94,7 +94,7 @@ export default function ContactForm() {
           required
           className="mt-1 h-4 w-4 shrink-0 accent-brand-blue"
         />
-        Consent is given for Ooh Energy to collect the information in this form for the purpose of responding to the enquiry.
+        Consent is given for OohEnergy to collect the information in this form for the purpose of responding to the enquiry.
       </label>
       <button
         type="submit"
@@ -105,15 +105,15 @@ export default function ContactForm() {
       </button>
       <div className="min-h-6" aria-live="polite">
         {submitState === "success" && (
-          <p className="text-[12px] text-brand-blue">Thank you. Your enquiry has been received.</p>
+          <p className="text-[12px] text-brand-blue">Thank you. Your enquiry has been submitted.</p>
         )}
         {submitState === "error" && (
           <p className="text-[12px] text-brand-muted">
-            The form service could not be reached, so an email draft has been opened instead.
+            The form could not confirm submission. If your email app opened, please send the draft; otherwise use the email link below.
           </p>
         )}
       </div>
-      <p className="text-[12px] text-brand-muted">Ooh Energy usually replies within two business days.</p>
+      <p className="text-[12px] text-brand-muted">OohEnergy usually replies within two business days. You can also <a href={`mailto:${site.enquiryEmail}`} className="text-brand-blue underline underline-offset-4">email us directly</a>.</p>
     </form>
   );
 }
@@ -148,7 +148,7 @@ function buildMailtoUrl(formData: FormData) {
   const organisation = String(formData.get("organisation") || "");
   const enquiryType = String(formData.get("enquiry_type") || "");
   const message = String(formData.get("message") || "");
-  const subject = `Ooh Energy enquiry${enquiryType ? `: ${enquiryType}` : ""}`;
+  const subject = `OohEnergy enquiry${enquiryType ? `: ${enquiryType}` : ""}`;
   const body = [
     `Name: ${name}`,
     `Email: ${email}`,

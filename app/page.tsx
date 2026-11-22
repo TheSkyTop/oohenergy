@@ -4,7 +4,7 @@ import { site } from "@/lib/content";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-brand-bg">
+    <main className="flex min-h-screen flex-col bg-brand-bg">
       <JsonLd />
       <Header />
       <HomeView />
@@ -48,12 +48,12 @@ function JsonLd() {
 
 function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-30 border-b border-brand-rule/90 bg-brand-bg/92 backdrop-blur-sm">
-      <div className="mx-auto flex min-h-[76px] max-w-[1120px] flex-col items-start justify-center gap-2 px-5 py-2 sm:h-14 sm:min-h-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0 lg:px-8">
-        <a href="/" className="flex items-center" aria-label="Ooh Energy home">
+    <header className="sticky inset-x-0 top-0 z-30 border-b border-brand-rule/90 bg-brand-bg/92 backdrop-blur-sm">
+      <div className="mx-auto flex min-h-[76px] max-w-[1184px] flex-col items-start justify-center gap-2 px-5 py-2 sm:h-14 sm:min-h-0 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 sm:py-0 lg:px-8">
+        <a href="/" className="flex items-center" aria-label="OohEnergy home">
           <Image
             src={site.logo}
-            alt="Ooh Energy"
+            alt="OohEnergy"
             width={1088}
             height={426}
             priority
@@ -74,14 +74,14 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="relative isolate flex min-h-[calc(100svh-108px)] items-center overflow-hidden px-5 pb-5 pt-24 sm:min-h-[calc(100vh-104px)] sm:px-6 sm:pt-20 lg:px-8">
+    <section className="site-stage home-stage relative isolate overflow-hidden px-5 sm:px-6 lg:px-8">
       <MobileEnergyField />
-      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 lg:grid-cols-[1fr_420px]">
-        <div className="max-w-[660px]">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px]">
+        <div className="min-w-0">
           <p className="font-heading text-[11px] font-medium uppercase tracking-[0.28em] text-brand-blue sm:text-[13px] sm:tracking-[0.32em]">
             {site.hero.eyebrow}
           </p>
-          <h1 className="mt-4 max-w-[640px] font-heading text-[26px] font-medium leading-[1.18] tracking-normal text-brand-ink sm:text-[34px]">
+          <h1 className="mt-4 font-heading text-[22px] font-medium leading-[1.3] tracking-normal text-brand-ink sm:text-[24px] lg:whitespace-nowrap lg:text-[18px] xl:text-[20px]">
             {site.hero.title}
           </h1>
           <p className="mt-4 max-w-[600px] text-[14px] leading-6 text-brand-muted sm:text-[15px]">
@@ -93,11 +93,19 @@ function Hero() {
           >
             {site.hero.cta}
           </a>
-          <div className="mt-5">
+          <div className="mt-5 flex flex-wrap gap-x-8 gap-y-2">
+            <div>
             <a href={site.hero.academy.href} className="inline-flex min-h-11 items-center gap-2 text-[14px] font-medium text-brand-blue underline-offset-4 hover:underline">
               {site.hero.academy.label}<span aria-hidden="true">&rarr;</span>
             </a>
             <p className="text-[11px] text-brand-muted">{site.hero.academy.status}</p>
+            </div>
+            <div>
+              <a href="https://brief.oohenergy.com/" className="inline-flex min-h-11 items-center gap-2 text-[14px] font-medium text-brand-blue underline-offset-4 hover:underline">
+                Explore Brief<span aria-hidden="true">&rarr;</span>
+              </a>
+              <p className="text-[11px] text-brand-muted">Australia Energy Brief &middot; Public beta</p>
+            </div>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-2 border-t border-brand-rule pt-3 sm:flex sm:flex-wrap sm:gap-x-5">
             {site.hero.summaryItems.map((item) => (
@@ -115,7 +123,7 @@ function Hero() {
 
 function HomeView() {
   return (
-    <div className="home-view">
+    <div className="home-view flex-1">
       <Hero />
     </div>
   );
