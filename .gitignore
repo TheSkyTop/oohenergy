@@ -4,3 +4,4 @@ out/
 *.log
 *.tsbuildinfo
 .env*
+__pycache__/
