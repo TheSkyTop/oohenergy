@@ -89,6 +89,7 @@
   footer: {
     copyright: "All rights reserved.",
     links: [
+      { label: "Official Reports", href: "/reports" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms & Disclaimer", href: "/terms" }
     ]
